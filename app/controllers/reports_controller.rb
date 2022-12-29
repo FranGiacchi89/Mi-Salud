@@ -36,7 +36,6 @@ class ReportsController < ApplicationController
   def destroy
     @report.destroy
     redirect_to reports_path, status: :see_other
-
   end
 
   private
