@@ -1,8 +1,7 @@
 class ReportsController < ApplicationController
-
+  
   def index
     @reports = current_user.reports
-
   end
 
   def show
@@ -38,6 +37,7 @@ class ReportsController < ApplicationController
   end
 
   private
+
   def report_params
     params.require(:report).permit(:title, :date, :category)
   end
