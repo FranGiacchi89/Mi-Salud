@@ -7,4 +7,8 @@ Rails.application.routes.draw do
   # root "articles#index"
   resources :bookings
   resources :reports
+  resources :habits
+  resources :exams
+  resources :medical_centers
+  resources :recipes
 end

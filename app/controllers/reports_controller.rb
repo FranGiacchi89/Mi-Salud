@@ -25,7 +25,6 @@ class ReportsController < ApplicationController
 
   def edit
     @report = Report.find(params[:id])
-
   end
 
   def update
