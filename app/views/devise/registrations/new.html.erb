@@ -1,4 +1,6 @@
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), data: { turbo: :false }) do |f| %>
+  <section style="background-color: white;">
+    <div class="py-5">
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col-12 col-md-8 col-lg-6 col-xl-5">
           <div class="card shadow-2-strong" style="border-radius: 0.5rem;">
@@ -37,4 +39,6 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
 <% end %>
