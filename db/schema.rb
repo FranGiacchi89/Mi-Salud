@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_07_170953) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_07_184412) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -65,7 +65,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_07_170953) do
   end
 
   create_table "habits", force: :cascade do |t|
-    t.string "habit_type"
+    t.string "type"
     t.string "quantity"
     t.string "frequency"
     t.bigint "user_id", null: false
@@ -99,6 +99,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_07_170953) do
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "photo"
     t.index ["user_id"], name: "index_recipes_on_user_id"
   end
 
@@ -132,6 +133,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_07_170953) do
     t.integer "blood_group"
     t.integer "blood_type"
     t.string "last_name"
+    t.string "photo"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
