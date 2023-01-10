@@ -5,6 +5,7 @@ Habit.destroy_all
 Recipe.destroy_all
 Report.destroy_all
 User.destroy_all
+
 user1 = User.create!(
   email: "franciscogiacchi@outlook.com",
   password: "123456",
