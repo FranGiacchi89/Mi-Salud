@@ -11,6 +11,11 @@ p{
   font-weight: 400;
 }
 
+.p-footer{
+    margin-right: 0px;
+    margin-top: 10px;
+}
+
 hr{
   margin-bottom: -30px;
   height: 1px;
@@ -66,7 +71,7 @@ font-weight: 400;
   display: flex;
   position: absolute;
   height: 490px;
-    margin-top: 200px;
+  margin-top: 200px;
 
 }
 .image-4-home {
@@ -102,6 +107,11 @@ color: #3f43fd;
     margin-bottom: 66px;
 }
 
+.py-5 {
+    padding-top: 7rem !important;
+    padding-bottom: 7rem !important;
+}
+
 .btn{
   background: #2584c6;
   border-color: #2483c6;
@@ -121,6 +131,7 @@ color: #3f43fd;
 .titulo-home2{
   color: #edebea;
 }
+
 .prueba{
   height: 1590px;
 
@@ -130,7 +141,6 @@ color: #3f43fd;
     overflow: auto; /* or overflow: scroll; */
     max-height: 600px; /* or any other value */
 }
-
 
 body{margin-top:20px;}
 .footer_area {
