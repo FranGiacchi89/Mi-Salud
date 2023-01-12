@@ -1,24 +1,23 @@
 .grey-bg {
-  background-color: #F5F7FA;
+  background-color: #f5f7fa;
 }
 
-.card{
-  height: 17rem;
-  width: 17rem;
-  background-image: url('/assets/Cardiologist-pana.png');
-  background-size: cover;
-
+.card {
+  height: 25rem;
+  width: 20rem;
 }
-.container{
+.container-exam {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
   grid-gap: 1rem;
+  margin-top: 20rem;
 }
 
-.card-body{
+.card-body {
   display: flex;
   position: relative;
   left: 2.5rem;
-
+  background-image: url("/assets/Cardiologist-pana.png");
+  background-size: cover;
 }
