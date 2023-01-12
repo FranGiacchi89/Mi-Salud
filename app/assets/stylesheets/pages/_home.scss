@@ -64,13 +64,17 @@ font-weight: 400;
     left: -23px;
     width: 416px;
     height: 280px;
+    border-radius: 9px;
+
 }
 .image-2-home {
   display: flex;
     position: absolute;
     height: 290px;
-    left: 536px;
+    left: 40rem;
     margin-top: 70px;
+    border-radius: 9px;
+
 }
 .image-3-home {
   display: flex;
@@ -109,6 +113,12 @@ color: #3f43fd;
   margin-left: 116px;
 }
 .container-section2{
+  transition: width .15s;
+  display: flex;
+  margin-bottom: 5px;
+  margin-left: 116px;
+}
+.container-section3{
   transition: width .15s;
   display: flex;
   margin-bottom: 5px;
@@ -316,4 +326,19 @@ ol li, ul li {
 ol, ul {
     margin: 0;
     padding: 0;
+}
+
+.card-exams-home{
+  width: 13rem;
+  border-radius: 0.4rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  right: 9rem;
+}
+.card-exams-home-2{
+  width: 13rem;
+  border-radius: 0.4rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  right: 21rem;
 }
