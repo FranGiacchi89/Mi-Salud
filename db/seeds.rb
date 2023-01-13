@@ -127,7 +127,7 @@ puts "creados 8 turnos medicos"
 exam = Exam.create!(
   user_id: user1.id,
   date: "2023-01-13",
-  name: "Radiografia de torax",
+  name: "Tocada de huevos",
   place: "Clinica Modelo"
 )
 file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
@@ -136,7 +136,7 @@ exam.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 exam1 = Exam.create!(
   user_id: user1.id,
   date: "2023-01-13",
-  name: "Radiografia de torax",
+  name: "Mamografia",
   place: "Clinica Modelo"
 )
 file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
@@ -145,7 +145,7 @@ exam1.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 exam2 = Exam.create!(
   user_id: user1.id,
   date: "2023-01-13",
-  name: "Radiografia de torax",
+  name: "Ecografia",
   place: "Clinica Modelo"
 )
 file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
@@ -154,7 +154,7 @@ exam2.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 exam3 = Exam.create!(
   user_id: user2.id,
   date: "2023-01-13",
-  name: "Radiografia de torax",
+  name: "Colonoscopia",
   place: "Clinica Modelo"
 )
 file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
