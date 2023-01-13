@@ -1,1 +1,77 @@
-<h1>Habits page</h1>
+<%= link_to "Agregar", new_habit_path %>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Tipo</th>
+      <th scope="col">Cantidad</th>
+      <th scope="col">Frecuencia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @habits.each do |habit|  %>
+    <tr>
+      <th scope="row"><%= habit.habit_type%></th>
+      <td><%= habit.quantity %></td>
+      <td><%= habit.frequency%></td>
+      <td><%=  %></td>
+      <td><%= link_to "elminar" %> | <%= link_to "editar" %> | <%= link_to "ver"  %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<%# <div class="block-content data">
+ <div class="card" tabindex="-1" onclick="getPrueba(26);">
+    <div class="card-body">
+      <span class="tipo tipo11"></span>
+      <span class="tipo-dato">Tabaco</span>
+      <span class="cantidad-dato">Tabaco: No Fumador</span>
+      <span class="ver-mas"><span class="fa fa-angle-right"></span></span>
+    </div>
+  </div>
+
+  <div class="card" tabindex="-1" onclick="getPrueba(27);">
+    <div class="card-body">
+      <span class="tipo tipo10"></span>
+      <span class="tipo-dato">Alcohol</span>
+      <span class="cantidad-dato">Alcohol: Consumidor esporádico</span>
+      <span class="ver-mas"><span class="fa fa-angle-right"></span></span>
+    </div>
+  </div>
+
+  <div class="card" tabindex="-1" onclick="getPrueba(28);">
+    <div class="card-body">
+      <span class="tipo tipo11"></span>
+      <span class="tipo-dato">Cafe</span>
+      <span class="cantidad-dato">Café: No consume</span>        			<span class="ver-mas"><span class="fa fa-angle-right"></span></span>
+    </div>
+  </div>
+
+  <div class="card" tabindex="-1" onclick="getPrueba(29);">
+    <div class="card-body">
+      <span class="tipo tipo11"></span>
+      <span class="tipo-dato">Alimentación</span>
+      <span class="cantidad-dato">Dieta: Vegetariana CON Suplementos</span>
+      <span class="ver-mas"><span class="fa fa-angle-right"></span></span>
+    </div>
+  </div>
+
+  <div class="card" tabindex="-1" onclick="getPrueba(30);">
+    <div class="card-body">
+      <span class="tipo tipo11"></span>
+      <span class="tipo-dato">Ejercicio</span>
+      <span class="cantidad-dato">Ejercicio: 3 ó más días por semana</span>
+      <span class="ver-mas"><span class="fa fa-angle-right"></span></span>
+    </div>
+  </div>
+
+  <div class="card" tabindex="-1" onclick="getPrueba(31);">
+    <div class="card-body">
+      <span class="tipo tipo11"></span>
+      <span class="tipo-dato">Sueño</span>
+      <span class="cantidad-dato">Sueño: Normal (8 horas)</span>
+      <span class="ver-mas"><span class="fa fa-angle-right"></span></span>
+    </div>
+  </div>
+</div> %>

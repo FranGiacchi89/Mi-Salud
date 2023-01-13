@@ -178,56 +178,56 @@ habit = Habit.create!(
   user_id: user1.id,
   habit_type: "Smoking",
   quantity: 1,
-  frequency: 3
+  frequency: "mensual"
 )
 
 habit1 = Habit.create!(
   user_id: user1.id,
   habit_type: "Drinking",
   quantity: 2,
-  frequency: 4
+  frequency: "mensual"
 )
 
 habit2 = Habit.create!(
   user_id: user1.id,
   habit_type: "Running",
   quantity: 1,
-  frequency: 2
+  frequency: "semanal"
 )
 
 habit3 = Habit.create!(
   user_id: user1.id,
   habit_type: "Meditation",
   quantity: 2,
-  frequency: 1
+  frequency: "diario"
 )
 
 habit4 = Habit.create!(
   user_id: user2.id,
   habit_type: "Meditation",
   quantity: 3,
-  frequency: 3
+  frequency: "mensual"
 )
 
 habit5 = Habit.create!(
   user_id: user2.id,
   habit_type: "Smoking",
   quantity: 3,
-  frequency: 3
+  frequency: "mensual"
 )
 
 habit6 = Habit.create!(
   user_id: user2.id,
   habit_type: "Running",
   quantity: 1,
-  frequency: 3
+  frequency: "mensual"
 )
 
 habit7 = Habit.create!(
   user_id: user2.id,
   habit_type: "Drinking",
   quantity: 1,
-  frequency: 1
+  frequency: "diario"
 )
 puts "creados 8 habitos"
 
