@@ -1,9 +1,28 @@
-<div class="row align-items-center vh-100 product-container">
-  <div class="card-exams" style="width: 13rem;">
-    <img src="assets/banner-doctor.png" class="card-img-top" alt="...">
-    <div class="card-body-1">
-        <h5 class="card-title-1">Doctor Favaloro</h5>
-        <p class="card-text-1">Informe medico general</p>
-    </div>
+<%# <div class="card">
+  <div class="row align-items-center vh-100">
+    <div class="col-sm-6 justify-content-center">
+      <div class="card">
+        <div class="card-body">
+          <h3><strong><%= @recipe.date</strong></h3> %>
+          <%# <h3><strong><%= @recipe.doctor_name</strong></h3> %>
+          <%# <%= cl_image_tag @recipe.photo.key %>
+        <%# </div> %>
+      <%# </div> %>
+    <%# </div> %>
+    <%# <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <%=  %>
+        <%# </div> %>
+      <%# </div> %>
+    <%# </div> %>
+  <%# </div> %>
+<%# </div> %>
+
+<div class="container align-items-center justify-content-center vh-100">
+  <div class="card">
+    <h3><strong><%= @recipe.date %></h3>
+    <h3><strong><%= @recipe.doctor_name %></strong></h3>
+    <%= cl_image_tag @recipe.photo.key %>
   </div>
 </div>
