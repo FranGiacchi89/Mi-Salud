@@ -1,10 +1,10 @@
 class RecipesController < ApplicationController
+  before_action :find_recipe, only: %i[show edit destroy]
   def index
     @recipes = current_user.recipes
   end
 
   def show
-    @recipe = Recipe.find(params[:id])
   end
 
   def new
@@ -21,12 +21,19 @@ class RecipesController < ApplicationController
     end
   end
 
+  def edit
+  end
+
   def destroy
     @recipe.destroy
     redirect_to recipe_path, status: :see_other
   end
 
   private
+
+  def find_recipe
+    @recipe = Recipe.find(params[:id])
+  end
 
   def recipe_params
     params.require(:report).permit(:date, :doctor_name)

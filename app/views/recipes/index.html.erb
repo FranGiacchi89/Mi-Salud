@@ -1,1 +1,22 @@
-<h1>Recipes</h1>
+<div class="container mt-5">
+  <% link_to "Agregar", new_recipe_path %>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Fecha</th>
+        <th scope="col">Nombre del doctor</th>
+        <th scope="col">Imagen</th>
+        <th scope="col">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @recipes.each do |recipe| %>
+      <tr>
+        <th scope="row"><% recipe.date %></th>
+        <td colspan="2"><% recipe.doctor_name %></td>
+        <td><%= link_to "eliminar", recipe_path(recipe), data: {turbo_method: :delete, turbo_confirm: "Desea eliminar el elemento de manera permanente?"}  %>  |  <%= link_to "editar", edit_recipe_path(recipe) %>  |  <%= link_to "ver", recipe_path(recipe) %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,6 @@
+<%= simple_form_for @recipe do |f| %>
+  <%= f.input :date %>
+  <%= f.input :doctor_name %>
+  <%= f.input :photo, as: :file %>
+  <%= f.submit %>
+<% end %>
