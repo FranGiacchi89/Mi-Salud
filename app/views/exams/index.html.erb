@@ -1,65 +1,23 @@
-
-<div class="card" style="width: 72rem;margin-left: 14rem;margin-top: 20rem; border-radius: 1rem;box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
-">
-  <div>
-    <h3 class="titulo-examen"style="justify-content: center;font-size: 1.75rem;display: flex;margin-top: 3rem;">Examenes</h3>
-  </div>
-
-      <div class="container-exam">
-        <div class="row product-container">
-                <div class="card-exams" style="width: 13rem;">
-                      <img src="assets/Cardiologist-pana.png" class="card-img-top" alt="...">
-                    <div class="card-body-1">
-                        <h5 class="card-title-1">Cardiologia</h5>
-                        <p class="card-text-1">Encontra todos tus estudios relaciondo con la caridiologia</p>
-                    </div>
-                  </div>
-        </div>
-        <div class="row product-container">
-                <div class="card-exams" style="width: 13rem;">
-                      <img src="assets/Blood-test-cuate.png" class="card-img-top" alt="...">
-                    <div class="card-body-1">
-                        <h5 class="card-title-1">Laboratorio</h5>
-                        <p class="card-text-1">Encontra todos tus estudios relaciondo con la caridiologia</p>
-                    </div>
-                  </div>
-        </div>
-        <div class="row product-container">
-                <div class="card-exams" style="width: 13rem;">
-                      <img src="assets/Radiography-cuate.png" class="card-img-top" alt="...">
-                    <div class="card-body-1">
-                        <h5 class="card-title-1">Radriografia</h5>
-                        <p class="card-text-1">Encontra todos tus estudios relaciondo con la caridiologia</p>
-                    </div>
-                  </div>
-        </div>
-        <div class="row product-container">
-                <div class="card-exams" style="width: 13rem;">
-                      <img src="assets/Cardiologist-pana.png" class="card-img-top" alt="...">
-                    <div class="card-body-1">
-                        <h5 class="card-title-1">Cardiologia</h5>
-                        <p class="card-text-1">Encontra todos tus estudios relaciondo con la caridiologia</p>
-                    </div>
-                  </div>
-        </div>
-          <div class="row product-container">
-                <div class="card-exams" style="width: 13rem;">
-                      <img src="assets/Cardiologist-pana.png" class="card-img-top" alt="...">
-                    <div class="card-body-1">
-                        <h5 class="card-title-1">Cardiologia</h5>
-                        <p class="card-text-1">Encontra todos tus estudios relaciondo con la caridiologia</p>
-                    </div>
-                  </div>
-        </div>
-          <div class="row product-container">
-                <div class="card-exams" style="width: 13rem;">
-                      <img src="assets/Cardiologist-pana.png" class="card-img-top" alt="...">
-                    <div class="card-body-1">
-                        <h5 class="card-title-1">Cardiologia</h5>
-                        <p class="card-text-1">Encontra todos tus estudios relaciondo con la caridiologia</p>
-                    </div>
-                  </div>
-        </div>
-      </div>
-      </div>
-</div>
+<%= link_to "Agregar", new_exam_path %>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Fecha</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Lugar</th>
+      <th scope="col">Imagen</th>
+      <th scope="col">Acciones </th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @exams.each do |exam|  %>
+    <tr>
+      <th scope="row"><%= exam.date %></th>
+      <td><%= exam.name %></td>
+      <td><%= exam.place%></td>
+      <td><%=  %></td>
+      <td><%= link_to "elminar" %> | <%= link_to "editar" %> | <%= link_to "ver"  %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
