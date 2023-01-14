@@ -26,3 +26,10 @@
 .row {
   justify-content: center;
 }
+.contenedor {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
