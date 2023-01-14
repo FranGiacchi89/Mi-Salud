@@ -1,6 +1,13 @@
 class BookingsController < ApplicationController
   def index
     @bookings = current_user.bookings
+
+    # # Scope your query to the dates being shown:
+    # start_date = params.fetch(:start_date, Date.today).to_date
+
+    # # For a monthly view:
+    # @bookings = Booking.where(date: start_date.beginning_of_month.beginning_of_week..start_date.end_of_month.end_of_week)
+    # raise
   end
 
   def show
@@ -29,6 +36,6 @@ class BookingsController < ApplicationController
   private
 
   def booking_params
-    params.require(:booking).permit(:title, :date, :details, :hour, :address)
+    params.require(:booking).permit(:name, :start_time, :details, :address)
   end
 end
