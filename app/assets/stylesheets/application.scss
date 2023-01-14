@@ -14,3 +14,7 @@
 
 @import "simple_calendar";
 @import "components/show_recipes";
+
+.config-pagina {
+  min-height: calc(100vh - 40px - 40px);
+}
