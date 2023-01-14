@@ -244,13 +244,37 @@ recipe.photo.attach(io: file, filename: "michele.png", content_type: "image/png"
 
 recipe2 = Recipe.create!(
   user_id: user1.id,
-  date: "2023-01-05",
-  doctor_name: "Cormillot"
+  date: "2023-01-15",
+  doctor_name: "Dr. Cormillot"
 )
 file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
 recipe2.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
-puts "creadas 2 recetas medicas"
+recipe3 = Recipe.create!(
+  user_id: user1.id,
+  date: "2023-01-07",
+  doctor_name: "Alberto Parodi"
+)
+file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
+recipe3.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
+
+recipe4 = Recipe.create!(
+  user_id: user1.id,
+  date: "2023-02-10",
+  doctor_name: "Norberto Ariel"
+)
+file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
+recipe4.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
+
+recipe5 = Recipe.create!(
+  user_id: user1.id,
+  date: "2023-03-25",
+  doctor_name: "Raul Gonzalez"
+)
+file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
+recipe5.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
+
+puts "creadas 5 recetas medicas"
 
 
 # REPORTES
