@@ -19,10 +19,28 @@
   <%# </div> %>
 <%# </div> %>
 
-<div class="container align-items-center justify-content-center vh-100">
+<%# <div class="contenedor vh-100">
   <div class="card">
-    <h3><strong><%= @recipe.date %></h3>
-    <h3><strong><%= @recipe.doctor_name %></strong></h3>
-    <%= cl_image_tag @recipe.photo.key %>
+
+    <%# <%=# cl_image_tag @recipe.photo.key %>
+  <%# </div> %>
+<%# </div> %>
+
+<div class="contenedor-receta">
+  <h1 style="position: relative; left: 4rem;">Receta Médica</h1>
+</div>
+<div class="contenedor vh-100">
+  <div class="card-recipe" style="border: groove">
+    <div class="card-details" style="width: 18rem;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong style="font-size: 1.5rem">Fecha</strong></li>
+        <%= @recipe.date %>
+        <li class="list-group-item"><strong style="font-size: 1.5rem">Doctor/a</strong></li>
+        <%= @recipe.doctor_name %>
+      </ul>
+    </div>
+    <div class="img-recipe">
+      <%= cl_image_tag @recipe.photo.key %>
+    </div>
   </div>
 </div>
