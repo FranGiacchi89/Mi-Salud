@@ -1,25 +1,46 @@
-<%= link_to "Agregar", new_habit_path %>
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Tipo</th>
-      <th scope="col">Cantidad</th>
-      <th scope="col">Frecuencia</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @habits.each do |habit|  %>
-    <tr>
-      <th scope="row"><%= habit.habit_type%></th>
-      <td><%= habit.quantity %></td>
-      <td><%= habit.frequency%></td>
-      <td><%=  %></td>
-      <td><%= link_to "elminar" %> | <%= link_to "editar" %> | <%= link_to "ver"  %></td>
-    </tr>
+<div>
+<h1>PRINCIPALES INDICADORES DE SALUD</h1>
+<h4>Agrega tus indicadores personalizados para poder llevar un registro de tu Salud</h4>
+</div>
+<div class="card d-flex justify-content-center mt-5 ms-5 me-5" style="width: 50rem">
+  <div>
+    <%= link_to new_habit_path do %>
+      <i class="fa-solid fa-plus icono"></i>
     <% end %>
-  </tbody>
-</table>
+  </div>
+  <div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Tipo</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col">Frecuencia</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <% @habits.each do |habit|  %>
+        <tr>
+          <th scope="row"><%= habit.habit_type%></th>
+          <td><%= habit.quantity %></td>
+          <td><%= habit.frequency%></td>
+          <td><%= link_to habit_path(habit), data: {turbo_method: :delete, turbo_confirm: "Estas seguro que deseas eliminar el habito?"} do %>
+          <i class="fa-solid fa-trash"></i>
+          <% end %>
+          | <%= link_to edit_habit_path(habit) do %>
+          <i class="fa-solid fa-pencil"></i>
+          <% end %>
 
+          | <%= link_to habit_path(habit) do %>
+          <i class="fa-solid fa-eye"></i>
+          <% end %>
+
+          </td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
 
 <%# <div class="block-content data">
  <div class="card" tabindex="-1" onclick="getPrueba(26);">
