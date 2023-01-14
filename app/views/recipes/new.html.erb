@@ -6,7 +6,7 @@
 <%# <% end %>
 
 
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), data: { turbo: :false }) do |f| %>
+<%= simple_form_for @recipe do |f| %>
       <div class="row py-5 justify-content-center align-items-center ">
         <div class="col-12 col-md-8 col-lg-6 col-xl-5">
           <div class="card shadow-2-strong" style="border-radius: 0.5rem;">
@@ -15,31 +15,26 @@
               <h3 class="mb-5">Sign up</h3>
 
               <div class="form-outline mb-4">
-                <%= f.input :name,
+                <%= f.input :date, label: "Fecha",
                 required: false,
                 autofocus: true,
-                input_html: { autocomplete: "name", class:"form-control form-control-lg" } %>
+                input_html: { autocomplete: "fecha", class:"form-control form-control-lg" } %>
               </div>
 
               <div class="form-outline mb-4">
-                <%= f.input :last_name,
+                <%= f.input :doctor_name, label: "Nombre del medico/a",
                 required: false,
                 autofocus: true,
-                input_html: { autocomplete: "Last name", class:"form-control form-control-lg" } %>
+                input_html: { autocomplete: "nombre del doctor/a", class:"form-control form-control-lg" } %>
               </div>
 
               <div class="form-outline mb-4">
-                <%= f.input :email,
+                <%= f.input :photo, label: "Cargue el archivo",
                 required: false,
                 autofocus: true,
-                input_html: { autocomplete: "email", class:"form-control form-control-lg" } %>
+                input_html: { autocomplete: "cargue el archivo", class:"form-control form-control-lg" } %>
               </div>
-
-              <%= f.input :password,
-                required: true,
-                hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                input_html: { autocomplete: "new-password" } %>
-              <%= f.button :submit, "Sign up", class:"btn btn-primary btn-lg btn-block mt-3" %>
+              <%= f.button :submit, "Sign up", class:"btn btn-primary btn-lg btn-block mt-4" %>
               <%# <hr class="my-4"> %>
             </div>
           </div>
