@@ -1,5 +1,5 @@
 class RecipesController < ApplicationController
-  before_action :find_recipe, only: %i[show edit destroy]
+  before_action :find_recipe, only: %i[show edit destroy update]
   def index
     @recipes = current_user.recipes
   end
@@ -17,16 +17,21 @@ class RecipesController < ApplicationController
     if @recipe.save
       redirect_to recipe_path
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 
   def edit
   end
 
+  def update
+    @recipe.update(recipe_params)
+    redirect_to recipes_path
+  end
+
   def destroy
     @recipe.destroy
-    redirect_to recipe_path, status: :see_other
+    redirect_to recipes_path, status: :see_other
   end
 
   private
@@ -36,6 +41,6 @@ class RecipesController < ApplicationController
   end
 
   def recipe_params
-    params.require(:report).permit(:date, :doctor_name)
+    params.require(:recipe).permit(:date, :doctor_name)
   end
 end
