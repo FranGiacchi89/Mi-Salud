@@ -5,7 +5,6 @@
       <th scope="col">Fecha</th>
       <th scope="col">Nombre</th>
       <th scope="col">Lugar</th>
-      <th scope="col">Imagen</th>
       <th scope="col">Acciones </th>
     </tr>
   </thead>
@@ -15,8 +14,7 @@
       <th scope="row"><%= exam.date %></th>
       <td><%= exam.name %></td>
       <td><%= exam.place%></td>
-      <td><%=  %></td>
-      <td><%= link_to "elminar" %> | <%= link_to "editar" %> | <%= link_to "ver"  %></td>
+      <td><%= link_to "elminar" %> | <%= link_to "editar" %> | <%= link_to "ver", exam_path(exam) %></td>
     </tr>
     <% end %>
   </tbody>
