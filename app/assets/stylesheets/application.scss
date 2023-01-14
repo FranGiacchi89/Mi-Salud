@@ -11,10 +11,7 @@
 @import "components/index";
 @import "pages/index";
 @import "components/index_exam";
-
+@import "components/show_exam";
 @import "simple_calendar";
 @import "components/show_recipes";
-
-.config-pagina {
-  min-height: calc(100vh - 40px - 40px);
-}
+@import "pages/sidebar";
