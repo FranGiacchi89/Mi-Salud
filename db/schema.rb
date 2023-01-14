@@ -44,10 +44,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_07_170953) do
 
   create_table "bookings", force: :cascade do |t|
     t.bigint "user_id", null: false
-    t.string "name"
-    t.datetime "start_time"
+    t.string "title"
+    t.datetime "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.time "hour"
     t.text "details"
     t.string "address"
     t.index ["user_id"], name: "index_bookings_on_user_id"
