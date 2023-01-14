@@ -1,4 +1,5 @@
 class Booking < ApplicationRecord
   belongs_to :user
-  validates :date, :title, presence: true
+  validates :start_time, :name, presence: true
+
 end
