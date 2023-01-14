@@ -1,19 +1,20 @@
-<h1>Bienvenidos</h1>
-<div class="card">
-<div class="row">
-  <div class="col-sm-6">
-    <div class="card-exams-show">
-      <div class="card-body">
-      <h3><%= @exam.name %></h3>
-      <h3><%= @exam.place %></h3>
-
-
-        <div>
-        <%= cl_image_tag @exam.photo.key %>
-        </div>
-          <h3><%= @exam.date %></h3>
-      </div>
+<div class="contenedor-exam">
+  <h1 style="position: relative; left: 4rem;">Receta Médica</h1>
+</div>
+<div class="contenedor vh-100">
+  <div class="card-exam" style="border: groove;">
+    <div class="card-details-exam" style="width: 18rem;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong style="font-size: 1.5rem">Fecha</strong></li>
+        <%= @exam.date %>
+        <li class="list-group-item"><strong style="font-size: 1.5rem">Nombre estudio</strong></li>
+        <%= @exam.name %>
+        <li class="list-group-item"><strong style="font-size: 1.5rem">Lugar Estudio</strong></li>
+         <%= @exam.place %>
+      </ul>
+    </div>
+    <div class="img-exam" style="border-radius: 1rem;">
+      <%= cl_image_tag @exam.photo.key, style:"border-radius: 1rem;" %>
     </div>
   </div>
-</div>
 </div>
