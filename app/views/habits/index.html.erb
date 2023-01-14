@@ -1,1 +1,100 @@
-<h1>Habits page</h1>
+<div class="py-5">
+  <h1>PRINCIPALES INDICADORES DE SALUD</h1>
+  <h4>Llevar un control de tus habitos es una buena practica para poder llevar un control de tu Salud.</h4>
+</div>
+<div class="card d-flex justify-content-center ms-5 me-5" style="width: 50rem">
+  <div>
+  <h6>Agrega tus indicadores personalizados</h6>
+    <%= link_to new_habit_path do %>
+      <i class="fa-solid fa-plus icono"></i>
+    <% end %>
+  </div>
+  <div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">TIPO</th>
+          <th scope="col">CANTIDAD</th>
+          <th scope="col">FRECUENCIA</th>
+          <th scope="col">ACCIONES</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <% @habits.each do |habit|  %>
+        <tr>
+          <th scope="row"><%= habit.habit_type%></th>
+          <td><%= habit.quantity %></td>
+          <td><%= habit.frequency%></td>
+          <td><%= link_to habit_path(habit), data: {turbo_method: :delete, turbo_confirm: "Estas seguro que deseas eliminar el habito?"} do %>
+          <i class="fa-solid fa-trash"></i>
+          <% end %>
+          | <%= link_to edit_habit_path(habit) do %>
+          <i class="fa-solid fa-pencil"></i>
+          <% end %>
+
+          | <%= link_to habit_path(habit) do %>
+          <i class="fa-solid fa-eye"></i>
+          <% end %>
+
+          </td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<%# <div class="block-content data">
+ <div class="card" tabindex="-1" onclick="getPrueba(26);">
+    <div class="card-body">
+      <span class="tipo tipo11"></span>
+      <span class="tipo-dato">Tabaco</span>
+      <span class="cantidad-dato">Tabaco: No Fumador</span>
+      <span class="ver-mas"><span class="fa fa-angle-right"></span></span>
+    </div>
+  </div>
+
+  <div class="card" tabindex="-1" onclick="getPrueba(27);">
+    <div class="card-body">
+      <span class="tipo tipo10"></span>
+      <span class="tipo-dato">Alcohol</span>
+      <span class="cantidad-dato">Alcohol: Consumidor esporádico</span>
+      <span class="ver-mas"><span class="fa fa-angle-right"></span></span>
+    </div>
+  </div>
+
+  <div class="card" tabindex="-1" onclick="getPrueba(28);">
+    <div class="card-body">
+      <span class="tipo tipo11"></span>
+      <span class="tipo-dato">Cafe</span>
+      <span class="cantidad-dato">Café: No consume</span>        			<span class="ver-mas"><span class="fa fa-angle-right"></span></span>
+    </div>
+  </div>
+
+  <div class="card" tabindex="-1" onclick="getPrueba(29);">
+    <div class="card-body">
+      <span class="tipo tipo11"></span>
+      <span class="tipo-dato">Alimentación</span>
+      <span class="cantidad-dato">Dieta: Vegetariana CON Suplementos</span>
+      <span class="ver-mas"><span class="fa fa-angle-right"></span></span>
+    </div>
+  </div>
+
+  <div class="card" tabindex="-1" onclick="getPrueba(30);">
+    <div class="card-body">
+      <span class="tipo tipo11"></span>
+      <span class="tipo-dato">Ejercicio</span>
+      <span class="cantidad-dato">Ejercicio: 3 ó más días por semana</span>
+      <span class="ver-mas"><span class="fa fa-angle-right"></span></span>
+    </div>
+  </div>
+
+  <div class="card" tabindex="-1" onclick="getPrueba(31);">
+    <div class="card-body">
+      <span class="tipo tipo11"></span>
+      <span class="tipo-dato">Sueño</span>
+      <span class="cantidad-dato">Sueño: Normal (8 horas)</span>
+      <span class="ver-mas"><span class="fa fa-angle-right"></span></span>
+    </div>
+  </div>
+</div> %>

@@ -1,0 +1,17 @@
+<div class="py-5">
+<h1>HABITO ACTUAL</h1>
+<h4>Actualiza los datos para poder llevar un mejor registro de tu Salud</h4>
+</div>
+  <div>
+    <%= simple_form_for @habit do |f| %>
+      <%= f.label :Habito %>
+      <%= f.select :habit_type, collection: ["Tabaco", "Alcohol", "Café", "Alimentación", "Ejercicio", "Sueño"] %>
+
+      <%= f.label :Cantidad %>
+      <%= f.input :quantity %>
+
+      <%= f.label :Frecuencia %>
+      <%= f.select :frequency, collection: ["Diario", "Fines de semana", "Habitual", "Ocacional", "Semanal", "Mensual"]%>
+      <%= f.submit :Crear, class:"btn btn-primary btn-block" %>
+    <% end %>
+  </div>
