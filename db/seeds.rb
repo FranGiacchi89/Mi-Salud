@@ -50,72 +50,64 @@ puts "usuario: #{user2.email}"
 
 booking = Booking.create!(
   user_id: user1.id,
-  title: "Turno clinico",
-  date: "2023-01-15",
-  hour: "17:30",
+  name: "Turno clinico",
+  start_time: "2023-01-15",
   details: "Control clinico",
   address: "Esquina Segurola y Havanna"
 )
 
 booking1 = Booking.create!(
   user_id: user1.id,
-  title: "Turno clinico",
-  date: "2023-01-15",
-  hour: "17:30",
+  name: "Turno clinico",
+  start_time: "2023-01-16",
   details: "Control clinico",
   address: "Esquina Segurola y Havanna"
 )
 
 booking2 = Booking.create!(
   user_id: user1.id,
-  title: "Turno psicologo",
-  date: "2023-01-10",
-  hour: "17:30",
+  name: "Turno psicologo",
+  start_time: "2023-01-10",
   details: "Turno semanal",
   address: "Esquina Segurola y Havanna"
 )
 
 booking3 = Booking.create!(
   user_id: user2.id,
-  title: "Turno gastroenterologo",
-  date: "2023-01-21",
-  hour: "16:30",
+  name: "Turno gastroenterologo",
+  start_time: "2023-01-21",
   details: "Control anual de sistema digestivo",
   address: "Esquina Segurola y Havanna"
 )
 
 booking4 = Booking.create!(
   user_id: user2.id,
-  title: "Turno clinico",
-  date: "2023-01-25",
-  hour: "15:30",
+  name: "Turno clinico",
+  start_time: "2023-01-25",
   details: "Control clinico",
   address: "Alameda de la Federacion 233"
 )
 
 booking5 = Booking.create!(
   user_id: user2.id,
-  title: "Turno psoquiatra",
-  date: "2023-01-15",
-  hour: "11:30",
+  name: "Turno psoquiatra",
+  start_time: "2023-01-15",
   details: "Turno mensual",
   address: "Alameda de la Federacion 233"
 )
 
 booking6 = Booking.create!(
   user_id: user2.id,
-  title: "Turno otorrinonaringologo",
-  date: "2023-01-12",
-  hour: "14:30",
+  name: "Turno otorrinonaringologo",
+  start_time: "2023-01-12",
   details: "Control de oidos",
   address: "Alameda de la Federacion 233"
 )
 
 booking7 = Booking.create!(
   user_id: user2.id,
-  title: "Turno kinesiologo",
-  date: "2023-01-13",
-  hour: "16:00",
+  name: "Turno kinesiologo",
+  start_time: "2023-01-13",
   details: "Rehabilitacion de contractura muscular",
   address: "Alameda de la Federacion 233"
 )

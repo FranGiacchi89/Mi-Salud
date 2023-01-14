@@ -1,21 +1,23 @@
-<%= link_to "Agregar", new_exam_path %>
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Fecha</th>
-      <th scope="col">Nombre</th>
-      <th scope="col">Lugar</th>
-      <th scope="col">Acciones </th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @exams.each do |exam|  %>
-    <tr>
-      <th scope="row"><%= exam.date %></th>
-      <td><%= exam.name %></td>
-      <td><%= exam.place%></td>
-      <td><%= link_to "elminar" %> | <%= link_to "editar" %> | <%= link_to "ver", exam_path(exam) %></td>
-    </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="contenedor">
+  <%= link_to "Agregar", new_exam_path %>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Fecha</th>
+        <th scope="col">Nombre </th>
+        <th scope="col">Lugar</th>
+        <th scope="col">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @exams.each do |exam| %>
+      <tr>
+        <th scope="row"><%= exam.date %></th>
+        <td><%= exam.name %></td>
+        <td><%= exam.place %></td>
+        <td><%= link_to "eliminar", exam_path(exam), data: {turbo_method: :delete, turbo_confirm: "Desea eliminar el elemento de manera permanente?"}  %>  |  <%= link_to "editar", edit_exam_path(exam) %>  |  <%= link_to "ver", exam_path(exam) %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

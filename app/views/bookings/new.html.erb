@@ -1,9 +1,9 @@
 
-<div class="container">
+<div class="contenedor">
   <%= simple_form_for @booking do |f| %>
-  <section class="vh-100" style="background-color: white;">
-    <div class="container py-5 h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
+  <section class="vh-110" style="background-color: white;">
+    <div class="contenedor py-5 h-110">
+      <div class="row d-flex justify-content-center align-items-center h-110">
         <div class="col-lg">
           <div class="card shadow-2-strong" style="border-radius: 0.5rem;">
             <div class="card-body p-5 text-center " style="box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.4); border-radius: 8px 8px 8px 8px;">
@@ -11,11 +11,11 @@
               <h3 class="mb-5">Nuevo booking</h3>
 
               <div class="form-outline mb-4">
-              <%= f.input :title, class: "form-control form-control-lg" %>
+              <%= f.input :name, class: "form-control form-control-lg" %>
               </div>
 
               <div class="form-outline mb-4">
-              <%= f.input :date, class:"form-control form-control-lg" %>
+              <%= f.input :start_time, class:"form-control form-control-lg" %>
               </div>
 
               <div class="form-outline mb-4">
@@ -23,17 +23,8 @@
               </div>
 
               <div class="form-outline mb-4">
-              <%=  f.input :hour, class: "form-control form-control-lg" %>
-              </div>
-
-              <div class="form-outline mb-4">
               <%=  f.input :address, class: "form-control form-control-lg" %>
               </div>
-
-              <div class="form-outline mb-4">
-              <%= f.input :photo, as: :file, class: "form-control form-control-lg" %>
-              </div>
-
 
                 <%= f.button :submit, "Crear", class:"btn btn-primary btn-lg btn-block mt-3" %>
               <hr class="my-4">

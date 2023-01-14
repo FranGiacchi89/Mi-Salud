@@ -13,10 +13,12 @@
   </head>
 
   <body>
-    <%= render "shared/navbar" %>
-    <%=  render "shared/sidebar"%>
-    <%= render "shared/flashes" %>
-    <%= yield %>
-    <%= render "shared/footer"%>
+    <div class="config-pagina">
+      <%= render "shared/navbar" %>
+      <%=  render "shared/sidebar"%>
+      <%= render "shared/flashes" %>
+      <%= yield %>
+      <%= render "shared/footer"%>
+    </div>
   </body>
 </html>

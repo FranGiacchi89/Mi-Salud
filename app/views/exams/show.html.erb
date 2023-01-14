@@ -2,24 +2,16 @@
 <div class="card">
 <div class="row">
   <div class="col-sm-6">
-    <div class="card">
+    <div class="card-exams-show">
       <div class="card-body">
       <h3><%= @exam.name %></h3>
       <h3><%= @exam.place %></h3>
-      <h3><%= @exam.date %></h3>
+
+
+        <div>
         <%= cl_image_tag @exam.photo.key %>
-
-
-
-
-
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <%=  %>
+        </div>
+          <h3><%= @exam.date %></h3>
       </div>
     </div>
   </div>
