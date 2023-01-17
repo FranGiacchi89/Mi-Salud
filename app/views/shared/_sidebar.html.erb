@@ -1,10 +1,14 @@
  <!-- Side navigation -->
+
+
+
+
 <div class="sidenav">
   <div class="s-profile">
     <a href data-ma-action="proifle-menu-toggle" class="s-profile mb-3">
-      <div class="sp-info">
+      <div class="sp-info" style="height: 15rem;border-radius: 1rem;">
         <span class="username" style="display: inline;"></span>
-        <i class="fa fa-caret-down"> <%= current_user.name %> </i>
+        <i class="fa fa-caret-down">  <%= cl_image_tag current_user.photo.key,class: "avatar dropdown-toggle mx-9" %><%= current_user.name %></i>
       </div>
     </a>
     <ul class="main-menu" style="display: none;">
