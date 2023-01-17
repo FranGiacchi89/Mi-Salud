@@ -28,11 +28,10 @@
           <td><%= link_to habit_path(habit), data: {turbo_method: :delete, turbo_confirm: "Estas seguro que deseas eliminar el habito?"} do %>
           <i class="fa-solid fa-trash"></i>
           <% end %>
-          | <%= link_to edit_habit_path(habit) do %>
+          <%= link_to edit_habit_path(habit) do %>
           <i class="fa-solid fa-pencil"></i>
           <% end %>
-
-          | <%= link_to habit_path(habit) do %>
+          <%= link_to habit_path(habit) do %>
           <i class="fa-solid fa-eye"></i>
           <% end %>
 
