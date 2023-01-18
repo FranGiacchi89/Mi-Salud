@@ -38,16 +38,16 @@
 <div class="sidenav">
   <div class="menu">
     <h1>
-      <button class="btn btn-secondary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      <button class="btn btn-secondary w-100 btn-sidebar" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="margin-bottom: 1rem;">
         <%= current_user.name %>
       </button>
     </h1>
     <div class="collapse" id="collapseExample">
       <div class="card card-body">
         <ul>
-          <li style="font-size: 1rem;"><a href="#">Mis datos</a></li>
-          <li><a href="#">Cambiar contraseña</a></li>
-          <li><a href="#">Cerrar sesión</a></li>
+          <li><a href="#" class="collapse-item">Mis datos</a></li>
+          <li><a href="#" class="collapse-item">Cambiar contraseña</a></li>
+          <li><a href="#" class="collapse-item">Cerrar sesión</a></li>
         </ul>
       </div>
     </div>
@@ -60,6 +60,5 @@
 
   <!-- Page content -->
   <div class="main">
-    ACA?
   </div>
 </div>
