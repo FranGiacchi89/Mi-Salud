@@ -2,7 +2,6 @@
   <div>
     <%= render "shared/sidebar" %>
   </div>
-
   <div class="contenedor mt-5">
     <div class="contenedor mt-5 mb-1 vh-100">
     <h1>PRINCIPALES INDICADORES DE SALUD</h1>
@@ -27,8 +26,7 @@
           <tbody class="table-group-divider">
             <% @habits.each do |habit|  %>
             <tr>
-              <th scope="row" style="position: relative;
-    text-align: left;"><%= habit.habit_type%></th>
+              <th scope="row" style="position: relative; text-align: left;"><%= habit.habit_type%></th>
               <td><%= habit.quantity %></td>
               <td><%= habit.frequency%></td>
 
