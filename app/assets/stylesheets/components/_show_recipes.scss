@@ -19,6 +19,7 @@
   overflow: hidden;
   text-align: center;
   transition: all 0.25s;
+  padding-top: 0rem;
 }
 
 .contenedor .card:hover {
@@ -80,4 +81,9 @@
   margin-top: 6rem;
   display: flex;
   justify-content: center;
+}
+
+.btn {
+  font-size: 20px;
+  color: white;
 }
