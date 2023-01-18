@@ -1,79 +1,127 @@
-/* The sidebar menu */
+// /* The sidebar menu */
+// .sidenav {
+//   height: 100%;
+//   position: fixed;
+//   z-index: 1;
+//   overflow-x: hidden; /* Disable horizontal scroll */
+//   height: 100%;
+//   width: 14rem;
+//   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+//   z-index: 1; /* Stay on top */
+//   top: 0.19rem;
+//   left: 0;
+//   background-color: #062f43;
+//   padding-top: 10rem;
+// }
+
+// .main-menu {
+//   background-color: #062f43;
+//   margin-bottom: 3rem;
+//   list-style: none;
+// }
+
+// /* The navigation menu links */
+// .sidenav a {
+//   padding: 0.38rem 0.5rem 0.38rem 1rem;
+//   text-decoration: none;
+//   font-size: 1.5rem;
+//   color: #818181;
+//   list-style: none;
+//   position: relative;
+//   top: -7rem;
+// }
+
+// /* When you mouse over the navigation links, change their color */
+// .sidenav a:hover {
+//   color: #f1f1f1;
+// }
+
+// /* Style page content */
+// .main {
+//   margin-left: 160px; /* Same as the width of the sidebar */
+//   padding: 0px 10px;
+// }
+
+// /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+// @media screen and (max-height: 450px) {
+//   .sidenav {
+//     padding-top: 1rem;
+//   }
+//   .sidenav a {
+//     font-size: 2rem;
+//   }
+// }
+
+// .s-profile a {
+//   position: relative;
+//   top: -5rem;
+//   display: block;
+//   min-height: 36px;
+//   margin-bottom: 5px;
+//   width: 100%;
+//   background-size: 100%;
+//   font-size: 0.9rem;
+// }
+
+// .sidenav i {
+//   font-size: 1.25rem;
+//   position: relative;
+//   left: 0.5rem;
+//   top: 0.14rem;
+// }
+
+// .sidenav i:hover {
+//   color: black;
+// }
+
+// .sp-info {
+//   background-color: lavender;
+// }
+
+// .dropdown {
+//   position: relative;
+//   top: -5rem;
+// }
+
+// .menu {
+//   position: relative;
+//   top: 3rem;
+//   left: 1.08rem;
+// }
+
+// .btn-secondary {
+//   width: 100%;
+//   font-size: 1.72rem;
+// }
+
+// .btn-secondary:hover {
+//   background-color: white;
+//   color: black;
+// }
+
+.recipe-container-2 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
 .sidenav {
-  height: 100%;
-  position: fixed;
-  z-index: 1;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  height: 100%;
-  width: 14rem;
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0.19rem;
-  left: 0;
+  margin-top: 0rem;
   background-color: #062f43;
-  padding-top: 10rem;
+  height: 100%;
+  padding: 1.25rem;
+  width: 13rem;
 }
 
-.main-menu {
-  background-color: #062f43;
-  margin-bottom: 3rem;
+.btn {
+  font-size: 1.7rem;
+  margin-top: 4rem;
+}
+
+a {
+  font-size: 1rem;
   list-style: none;
 }
 
-/* The navigation menu links */
-.sidenav a {
-  padding: 0.38rem 0.5rem 0.38rem 1rem;
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: #818181;
-  list-style: none;
-  position: relative;
-  top: -7rem;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-/* Style page content */
-.main {
-  margin-left: 160px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 1rem;
-  }
-  .sidenav a {
-    font-size: 2rem;
-  }
-}
-
-.s-profile a {
-  position: relative;
-  top: -5rem;
-  display: block;
-  min-height: 36px;
-  margin-bottom: 5px;
-  width: 100%;
-  background-size: 100%;
-  font-size: 0.9rem;
-}
-
-.sidenav i {
-  font-size: 1.25rem;
-  position: relative;
-  left: 0.5rem;
-  top: 0.14rem;
-}
-
-.sidenav i:hover {
-  color: black;
-}
-
-.sp-info {
-  background-color: lavender;
+.category {
+  font-size: 1.3rem;
 }

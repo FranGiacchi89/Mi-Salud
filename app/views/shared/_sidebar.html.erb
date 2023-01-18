@@ -1,40 +1,68 @@
  <!-- Side navigation -->
 
 
-<div class="sidenav">
+
   <%# <div class="s-profile">
     <a href data-ma-action="proifle-menu-toggle" class="s-profile mb-3">
-      <div class="sp-info">
+      <div class="sp-info" style="height: 15rem;border-radius: 1rem;">
         <span class="username" style="display: inline;"></span>
-        <i class="fa fa-caret-down"> <%= current_user.name %> </i>
+        <i class="fa fa-caret-down"> <%= current_user.name %> <%# </i>
+      <%# </div> %>
+    <%# </a> %>
+    <%# <ul class="main-menu" style="display: none;"> %>
+      <%# <li> %>
+        <%# <a href="https://www.quironprevencion.com/portal-client/cm/misalud/tkUserData" onclick="return showModalDialog(this);"> %>
+          <%# <span class="fa fa-fw fa-user"></span> Mis datos %>
+        <%# </a> %>
+      <%# </li> %>
+      <%# <li> %>
+        <%# <a href="https://www.quironprevencion.com/portal-client/cm/misalud/tkUserPwd" onclick="return showModalDialog(this);"> %>
+          <%# <span class="fa fa-fw fa-gear"></span> Cambiar contraseña %>
+        <%# </a> %>
+      <%# </li> %>
+      <%# <li> %>
+        <%# <a href="javascript:;" onclick="logoff();" title="Cerrar sesión"><span class="fa fa-fw fa-power-off"></span> Cerrar sesión %>
+        <%# </a> %>
+      <%# </li> %>
+    <%# </ul> %>
+  <%# </div> %>
+
+<%# <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <%= current_user.name %>
+  <%# </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item-1" href="#">Mis datos</a></li>
+    <li><a class="dropdown-item-2" href="#">Cambiar contraseña</a></li>
+    <li><a class="dropdown-item-3" href="#">Cerrar sesión</a></li>
+  </ul>
+</div> %>
+
+<div class="sidenav">
+  <div class="menu">
+    <h1>
+      <button class="btn btn-secondary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        <%= current_user.name %>
+      </button>
+    </h1>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        <ul>
+          <li style="font-size: 1rem;"><a href="#">Mis datos</a></li>
+          <li><a href="#">Cambiar contraseña</a></li>
+          <li><a href="#">Cerrar sesión</a></li>
+        </ul>
       </div>
-    </a>
-    <ul class="main-menu" style="display: block;">
-      <li>
-        <a href="" onclick="return showModalDialog(this);">
-          <span class="fa fa-fw fa-user"></span> Mis datos
-        </a>
-      </li>
-      <li>
-        <a href="" onclick="return showModalDialog(this);">
-          <span class="fa fa-fw fa-gear"></span> Cambiar contraseña
-        </a>
-      </li>
-      <li>
-        <a href="javascript:;" onclick="logoff();" title="Cerrar sesión"><span class="fa fa-fw fa-power-off"></span> Cerrar sesión
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div>
-    <h1> <%= link_to "Mi salud", root_path%> </h1>
-    <h1> <%= link_to "Examenes", exams_path%> </h1>
-    <h1> <%= link_to "Habitos", habits_path%> </h1>
-    <h1> <%= link_to "Prescripciones", recipes_path%> </h1>
-    <h1> <%= link_to "Turnos", bookings_path%> </h1>
+    </div>
+    <h1 class="category"> <%= link_to "Mi salud", root_path%> </h1>
+    <h1 class="category"> <%= link_to "Turnos", bookings_path%> </h1>
+    <h1 class="category"> <%= link_to "Recetas", recipes_path%> </h1>
+    <h1 class="category"> <%= link_to "Examenes", exams_path%> </h1>
+    <h1 class="category"> <%= link_to "Habitos", habits_path%> </h1>
   </div>
 
-<!-- Page content -->
-<div class="main">
-  ACA?
+  <!-- Page content -->
+  <div class="main">
+    ACA?
+  </div>
 </div>

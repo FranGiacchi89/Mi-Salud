@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home]
+  skip_before_action :authenticate_user!, only: %i[home nosotros mi_salud]
   # layout "layout_aplication", only: [:home]
 
   def index
@@ -12,5 +12,8 @@ class PagesController < ApplicationController
   end
 
   def nosotros
+  end
+
+  def mi_salud
   end
 end
