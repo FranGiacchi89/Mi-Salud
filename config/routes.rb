@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   resources :recipes
   get "nosotros", to: "pages#nosotros"
   get "contacto", to: "pages#contacto"
+  get "mi_salud", to: "pages#mi_salud"
 end

@@ -42,6 +42,6 @@ class RecipesController < ApplicationController
   end
 
   def recipe_params
-    params.require(:recipe).permit(:date, :doctor_name)
+    params.require(:recipe).permit(:date, :doctor_name, :photo)
   end
 end
