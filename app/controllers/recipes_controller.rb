@@ -15,7 +15,7 @@ class RecipesController < ApplicationController
     @recipe = Recipe.new(recipe_params)
     @recipe.user = current_user
     if @recipe.save
-      redirect_to recipe_path
+      redirect_to recipes_path
     else
       render :new, status: :unprocessable_entity
     end
@@ -25,6 +25,7 @@ class RecipesController < ApplicationController
   end
 
   def update
+    @recipe = Recipe.find(params[:id])
     @recipe.update(recipe_params)
     redirect_to recipes_path
   end
@@ -41,6 +42,6 @@ class RecipesController < ApplicationController
   end
 
   def recipe_params
-    params.require(:recipe).permit(:date, :doctor_name)
+    params.require(:recipe).permit(:date, :doctor_name, :photo)
   end
 end
