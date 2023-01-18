@@ -11,14 +11,14 @@
         <i class="fa fa-caret-down">  <%= cl_image_tag current_user.photo.key,class: "avatar dropdown-toggle mx-9" %><%= current_user.name %></i>
       </div>
     </a>
-    <ul class="main-menu" style="display: none;">
+    <ul class="main-menu" style="display: block;">
       <li>
-        <a href="https://www.quironprevencion.com/portal-client/cm/misalud/tkUserData" onclick="return showModalDialog(this);">
+        <a href="" onclick="return showModalDialog(this);">
           <span class="fa fa-fw fa-user"></span> Mis datos
         </a>
       </li>
       <li>
-        <a href="https://www.quironprevencion.com/portal-client/cm/misalud/tkUserPwd" onclick="return showModalDialog(this);">
+        <a href="" onclick="return showModalDialog(this);">
           <span class="fa fa-fw fa-gear"></span> Cambiar contraseña
         </a>
       </li>
@@ -30,10 +30,10 @@
   </div>
   <div>
     <h1> <%= link_to "Mi salud", root_path%> </h1>
-    <h1> <%= link_to "Turnos", bookings_path%> </h1>
-    <h1> <%= link_to "Recetas", recipes_path%> </h1>
     <h1> <%= link_to "Examenes", exams_path%> </h1>
     <h1> <%= link_to "Habitos", habits_path%> </h1>
+    <h1> <%= link_to "Prescripciones", recipes_path%> </h1>
+    <h1> <%= link_to "Turnos", bookings_path%> </h1>
   </div>
 
 <!-- Page content -->
