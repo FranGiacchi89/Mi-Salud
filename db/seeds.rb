@@ -122,7 +122,7 @@ exam = Exam.create!(
   name: "Tocada de huevos",
   place: "Clinica Modelo"
 )
-file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
+file = URI.open("https://res.cloudinary.com/dz3nzxaiy/image/upload/v1674137736/receta1_rglc6c.jpg")
 exam.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 exam1 = Exam.create!(
@@ -131,7 +131,7 @@ exam1 = Exam.create!(
   name: "Mamografia",
   place: "Clinica Modelo"
 )
-file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
+file = URI.open("https://res.cloudinary.com/dz3nzxaiy/image/upload/v1674137736/receta2_vqmjfq.jpg")
 exam1.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 exam2 = Exam.create!(
@@ -140,28 +140,66 @@ exam2 = Exam.create!(
   name: "Ecografia",
   place: "Clinica Modelo"
 )
-file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
+file = URI.open("https://res.cloudinary.com/dz3nzxaiy/image/upload/v1674138612/IMG_5110_xi4t6p.jpg")
 exam2.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 exam3 = Exam.create!(
-  user_id: user2.id,
+  user_id: user1.id,
   date: "2023-01-13",
   name: "Colonoscopia",
   place: "Clinica Modelo"
 )
-file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
+file = URI.open("http://res.cloudinary.com/dz3nzxaiy/image/upload/v1674139294/IMG_5111_gd0n9f.jpg")
 exam3.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 exam4 = Exam.create!(
-  user_id: user2.id,
-  date: "2023-01-13",
+  user_id: user1.id,
+  date: "2022-01-13",
   name: "Radiografia de torax",
   place: "Clinica Modelo"
 )
 file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
 exam4.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
-puts "creados 5 examenes medicos"
+
+exam5 = Exam.create!(
+  user_id: user1.id,
+  date: "2022-06-05",
+  name: "Ecografia",
+  place: "Maternidad oroño"
+)
+file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
+exam5.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
+
+exam6 = Exam.create!(
+  user_id: user1.id,
+  date: "2022-05-18",
+  name: "Mamografia",
+  place: "Sanatorio parque"
+)
+file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
+exam6.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
+
+exam7 = Exam.create!(
+  user_id: user1.id,
+  date: "2022-08-22",
+  name: "Analisis sangre",
+  place: "cibic"
+)
+file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
+exam7.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
+
+exam8 = Exam.create!(
+  user_id: user1.id,
+  date: "2022-08-22",
+  name: "vacuna covid",
+  place: "Hospital san felipe"
+)
+file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
+exam8.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
+
+
+puts "creados 8 examenes medicos"
 
 # HABITOS
 # habits: 4 a cada uno
