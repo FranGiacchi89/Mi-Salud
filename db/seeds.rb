@@ -119,8 +119,8 @@ puts "creados 8 turnos medicos"
 exam = Exam.create!(
   user_id: user1.id,
   date: "2023-01-13",
-  name: "Tocada de huevos",
-  place: "Clinica Modelo"
+  name: "Tomografía",
+  place: "Clinica Parque"
 )
 file = URI.open("https://res.cloudinary.com/dz3nzxaiy/image/upload/v1674137736/receta1_rglc6c.jpg")
 exam.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
