@@ -10,6 +10,7 @@
 }
 
 .navbar-lewagon .navbar-collapse {
+  font-size: 1.5rem;
   flex-grow: 0;
   margin-right: 100px;
 }
@@ -21,6 +22,15 @@
 }
 
 .navbar-lewagon a{
-  color: black !important;;
+  color: black !important;
   text-decoration: none !important;
+}
+
+.dropdown-menu {
+  position: absolute;
+  width: 13rem;
+  color: aqua;
+  background: rgb(255, 255, 255);
+  border-color:rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.4);
 }
