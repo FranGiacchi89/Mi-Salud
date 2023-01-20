@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   resources :exams
   resources :medical_centers
   resources :recipes
+  resources :users
   get "nosotros", to: "pages#nosotros"
   get "contacto", to: "pages#contacto"
   get "home2", to: "pages#home2"

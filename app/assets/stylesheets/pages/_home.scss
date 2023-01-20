@@ -163,16 +163,16 @@ a {
   max-height: 600px;
 }
 .footer {
-  background: #F4F4F4;
+  background: #f4f4f4;
   display: flex;
   position: relative;
+  bottom: 0;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   height: 5rem;
   padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
-  margin-left: -7rem;
-  margin-right: -1rem;
+  color: rgba(0, 0, 0, 0.3);
 }
 .footer-links {
   display: flex;
