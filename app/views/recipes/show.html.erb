@@ -1,7 +1,7 @@
 <div class="no-wrap">
-  <div>
-    <%= render "shared/sidebar" %>
-  </div>
+    <div>
+      <%= render "shared/sidebar" %>
+    </div>
   <div class="contenedor-receta">
     <h1 style="position: relative; left: 4rem;">Receta Médica</h1>
   </div>
@@ -13,11 +13,12 @@
           <%= @recipe.date %>
           <li class="list-group-item"><strong style="font-size: 1.5rem">Doctor/a</strong></li>
           <%= @recipe.doctor_name %>
+          <%= link_to "Volver", recipes_path(@recipes), class: "btn btn-secondary" %>
+
         </ul>
       </div>
       <div class="img-recipe">
-        <%= cl_image_tag @recipe.photo.key %>
-      </div>
+      <%= cl_image_tag @recipe.photo.key, id:"my-image", style:"height: 31rem;position:relative;left: -1rem;top: 0rem;"%>    </div>
     </div>
   </div>
 </div>

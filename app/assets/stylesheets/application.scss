@@ -19,10 +19,3 @@
 @import "pages/nosotros";
 @import "components/mi_salud";
 @import "components/show_habits";
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin-left: 80px;
-}
