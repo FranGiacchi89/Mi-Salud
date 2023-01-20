@@ -16,4 +16,7 @@ class PagesController < ApplicationController
 
   def mi_salud
   end
+
+  def home2
+  end
 end

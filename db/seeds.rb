@@ -263,7 +263,7 @@ recipe = Recipe.create!(
   date: "2023-01-03",
   doctor_name: "Rene Favaloro"
 )
-file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
+file = URI.open("https://res.cloudinary.com/dz3nzxaiy/image/upload/v1674137736/receta1_rglc6c.jpg")
 recipe.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 recipe2 = Recipe.create!(

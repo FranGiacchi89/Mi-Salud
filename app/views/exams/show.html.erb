@@ -16,6 +16,7 @@
           <%= @exam.name %>
           <li class="list-group-item"><strong style="font-size: 1.5rem">Lugar Estudio</strong></li>
           <%= @exam.place %>
+          <%= link_to "Volver", exams_path(@exams), class: "btn btn-secondary" %>
         </ul>
       </div>
       <div class="img-exam" style="border-radius: 1rem;">

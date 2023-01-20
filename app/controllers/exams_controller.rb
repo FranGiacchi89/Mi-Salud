@@ -1,10 +1,10 @@
 class ExamsController < ApplicationController
+  before_action :exam_id, only: %i[show edit update destroy]
   def index
     @exams = current_user.exams.order(:created_at)
   end
 
   def show
-    @exam = Exam.find(params[:id])
   end
 
   def new
@@ -22,7 +22,6 @@ class ExamsController < ApplicationController
   end
 
   def edit
-    @exam = Exam.find(params[:id])
   end
 
   def update
@@ -39,5 +38,9 @@ class ExamsController < ApplicationController
 
   def exam_params
     params.require(:exam).permit(:name, :date, :place)
+  end
+
+  def exam_id
+    @exam = Exam.find(params[:id])
   end
 end
