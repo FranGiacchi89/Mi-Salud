@@ -7,7 +7,7 @@
       <div class="row"style="display: flex;position: relative;right: 16rem;top: 2rem;">
         <h2 style="position: relative;left: 2rem;top: 2.4rem;">Prescripciones</h2>
           <div class="button-exam" style="position: relative;right: -33rem;top: -0.5rem;">
-            <%= link_to "+", new_recipe_path, class:"btn btn-primary mb-5" %>
+            <%= link_to "+", new_recipe_path, class:"btn btn-primary mb-5", style:"background-color: #09aea6" %>
           </div>
       </div>
 
@@ -26,10 +26,10 @@
             <th scope="row"><%= recipe.date %></th>
             <td><%= recipe.doctor_name %></td>
             <td><%= link_to recipe_path(recipe), data: {turbo_method: :delete, turbo_confirm: "Desea eliminar el elemento de manera permanente?"} do %>
-              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-trash" style="color: #f05168"></i>
               <% end %>
               <%= link_to edit_recipe_path(recipe) do %>
-              <i class="fa-solid fa-pencil"></i>
+              <i class="fa-solid fa-pencil" style="color: #ffcc07"></i>
               <% end %>
               <%= link_to recipe_path(recipe) do %>
               <i class="fa-solid fa-eye"></i>
