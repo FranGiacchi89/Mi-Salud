@@ -285,7 +285,7 @@ recipe3.photo.attach(io: file, filename: "michele.png", content_type: "image/png
 recipe4 = Recipe.create!(
   user_id: user1.id,
   date: "2023-02-10",
-  doctor_name: "Norberto Ariel"
+  doctor_name: "Ariana Ramirez"
 )
 file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
 recipe4.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
@@ -297,6 +297,7 @@ recipe5 = Recipe.create!(
 )
 file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
 recipe5.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
+
 
 puts "creadas 5 recetas medicas"
 
