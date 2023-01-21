@@ -1,7 +1,7 @@
 .contenedor {
   width: 100%;
   flex-wrap: wrap;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
 }
@@ -47,9 +47,6 @@
   padding: 1.25rem;
   width: 45rem;
   height: 30rem;
-  position: relative;
-  left: 4rem;
-  top: -6rem;
   border-radius: 0.4rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   overflow: hidden;
@@ -86,4 +83,10 @@
 .btn {
   font-size: 20px;
   color: white;
+}
+
+.recipes-show-title {
+  margin-top: 4rem;
+  padding-left: 16rem;
+  padding-bottom: 10rem;
 }

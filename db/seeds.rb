@@ -263,7 +263,7 @@ recipe = Recipe.create!(
   date: "2023-01-03",
   doctor_name: "Rene Favaloro"
 )
-file = URI.open("https://res.cloudinary.com/dz3nzxaiy/image/upload/v1674137736/receta1_rglc6c.jpg")
+file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674328715/receta_1_oay2a7.jpg")
 recipe.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 recipe2 = Recipe.create!(
@@ -271,7 +271,7 @@ recipe2 = Recipe.create!(
   date: "2023-01-15",
   doctor_name: "Dr. Cormillot"
 )
-file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
+file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674328715/receta_2_bdfjn1.jpg")
 recipe2.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 recipe3 = Recipe.create!(
@@ -279,7 +279,7 @@ recipe3 = Recipe.create!(
   date: "2023-01-07",
   doctor_name: "Alberto Parodi"
 )
-file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
+file = URI.open("https://res.cloudinary.com/dz3nzxaiy/image/upload/v1674137736/receta1_rglc6c.jpg")
 recipe3.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 recipe4 = Recipe.create!(
@@ -287,7 +287,7 @@ recipe4 = Recipe.create!(
   date: "2023-02-10",
   doctor_name: "Ariana Ramirez"
 )
-file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
+file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674328715/receta_1_oay2a7.jpg")
 recipe4.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 recipe5 = Recipe.create!(
@@ -295,7 +295,7 @@ recipe5 = Recipe.create!(
   date: "2023-03-25",
   doctor_name: "Raul Gonzalez"
 )
-file = URI.open("https://avatars.githubusercontent.com/u/48396891?v=4")
+file = URI.open("https://res.cloudinary.com/drd7kavdp/image/upload/v1674328715/receta_1_oay2a7.jpg")
 recipe5.photo.attach(io: file, filename: "michele.png", content_type: "image/png")
 
 
