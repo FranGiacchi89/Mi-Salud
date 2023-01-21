@@ -8,6 +8,10 @@
   background-color: #062f43;
   height: 100vh;
   padding: 1.25rem;
+  width: 14rem;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 
@@ -29,6 +33,19 @@ a {
   left: -2rem;
   font-size: 1rem;
   list-style: none;
+  color: #1f699e;
+  line-height: 2.2rem;
+}
+
+.collapse-item-datos {
+  margin-top: 1rem;
+  color: #1f699e;
+  position: relative;
+  left: -2rem;
+  font-size: 1rem;
+  list-style: none;
+  color: #1f699e;
+  line-height: 2.2rem;
 }
 
 .collapse {
