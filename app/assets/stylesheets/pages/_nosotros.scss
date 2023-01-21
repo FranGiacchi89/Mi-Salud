@@ -96,9 +96,19 @@
   font-weight: 600;
   letter-spacing: 0;
   line-height: 2rem;
-  position: relative;
-  top: 1.5rem;
-  left: -35.9rem;
   width: 35rem;
   margin-top: 10rem;
+}
+
+.office-img {
+}
+
+.contenedor-principal {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.radio-imagen-office {
+  width: 100%;
+  height: 50rem;
 }
